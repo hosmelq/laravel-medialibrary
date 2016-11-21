@@ -2,15 +2,14 @@
 
 namespace Spatie\MediaLibrary\Jobs;
 
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 use Spatie\MediaLibrary\Conversion\ConversionCollection;
 use Spatie\MediaLibrary\FileManipulator;
 use Spatie\MediaLibrary\Media;
 
-class PerformConversions extends Job implements SelfHandling, ShouldQueue
+class PerformConversions extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
