@@ -232,7 +232,7 @@ trait HasMediaTrait
     {
         $this->getMedia($collectionName, [])
             ->filter(function ($currentMediaItem) use ($newMediaArray) {
-                return !in_array($currentMediaItem->id, collect($newMediaArray)->lists('id')->toArray());
+                return !in_array($currentMediaItem->id, collect($newMediaArray)->pluck('id')->toArray());
             })
             ->map(function ($media) {
                 $media->delete();
