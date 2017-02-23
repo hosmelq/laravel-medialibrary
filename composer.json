@@ -20,10 +20,10 @@
   ],
   "require": {
     "php" : "^5.5|^7.0",
-    "illuminate/bus": "~5.1.16|~5.2.0|5.3.*",
-    "illuminate/console": "~5.1.16|~5.2.0|5.3.*",
-    "illuminate/database": "~5.1.16|~5.2.0|5.3.*",
-    "illuminate/support": "~5.1.16|~5.2.0|5.3.*",
+    "illuminate/bus": "5.3.*|5.4.*",
+    "illuminate/console": "5.3.*|5.4.*",
+    "illuminate/database": "5.3.*|5.4.*",
+    "illuminate/support": "5.3.*|5.4.*",
     "spatie/laravel-glide": "^2.2.4",
     "spatie/pdf-to-image": "^1.0.1",
     "spatie/string": "^2.0"
